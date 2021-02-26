@@ -21,7 +21,7 @@ case object Luhn {
         // else apply the next function in funcs to the next element in list
       case head :: tail => head (list(index)) :: altMap(tail, list, index+1)
       // when we reach the last function, apply the first one again
-      case Nil => first_func (list(index)) :: Nil
+      //case _ => first_func (list(index))
     }
   }
 
